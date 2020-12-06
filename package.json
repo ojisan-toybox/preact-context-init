@@ -1,0 +1,22 @@
+{
+  "name": "preact-context-init",
+  "version": "1.0.0",
+  "description": "createContextのdefaultValueを上書けるか実験",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ojisan-toybox/preact-context-init.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ojisan-toybox/preact-context-init/issues"
+  },
+  "homepage": "https://github.com/ojisan-toybox/preact-context-init#readme",
+  "dependencies": {
+    "preact": "^10.5.7"
+  }
+}
