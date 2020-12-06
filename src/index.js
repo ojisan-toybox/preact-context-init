@@ -1,11 +1,10 @@
 import { createContext, h, render } from "preact";
 import { Child } from "./child";
-
-export const Context = createContext({ cnt: 1 });
+import { ContextProvider } from "./context";
 
 render(
-  <Context.Provider value={{ cnt: 2 }}>
+  <ContextProvider>
     <Child></Child>
-  </Context.Provider>,
+  </ContextProvider>,
   document.body
 );
