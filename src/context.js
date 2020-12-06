@@ -34,7 +34,6 @@ export const ActionContext = createContext({
 
 export function ContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, inialState);
-  console.log("<AnswerContextContextProvider>dispatch", dispatch);
   return (
     <CountContext.Provider value={{ state: state }}>
       <ActionContext.Provider value={{ dispatch }}>

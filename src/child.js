@@ -1,17 +1,17 @@
 import { h } from "preact";
 import { useContext } from "preact/compat";
 import { ActionContext, actions, CountContext } from "./context";
+import { useHoge } from "./useHoge";
 
 export const Child = () => {
-  const countContext = useContext(CountContext);
-  const actionContext = useContext(ActionContext);
+  const [count, increment] = useHoge();
 
   return (
     <div>
-      {countContext.state.count}
+      {count}
       <button
         onclick={() => {
-          actionContext.dispatch(actions.increment());
+          increment();
         }}
       >
         increment
