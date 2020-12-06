@@ -4,5 +4,5 @@ import { Context } from ".";
 
 export const Child = () => {
   const context = useContext(Context);
-  return <div>{context}</div>;
+  return <div>{context.cnt}</div>;
 };
