@@ -1,3 +1,11 @@
-import { h, render } from "preact";
+import { createContext, h, render } from "preact";
+import { Child } from "./child";
 
-render(<div>hello</div>, document.body);
+export const Context = createContext(1);
+
+render(
+  <Context.Provider value={2}>
+    <Child></Child>
+  </Context.Provider>,
+  document.body
+);
