@@ -18,5 +18,15 @@
   "homepage": "https://github.com/ojisan-toybox/preact-context-init#readme",
   "dependencies": {
     "preact": "^10.5.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "babel-preset-preact": "^2.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.10.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
   }
 }
